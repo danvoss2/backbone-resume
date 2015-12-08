@@ -15,6 +15,16 @@ define([
       $('#nav-list').on('click', 'a', function() {
         utils.navLinkClicks($(this));
       });
+
+      //Load Bootstrap after jQuery is ready
+      $.getScript( "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" )
+        .done(function( script, textStatus ) {
+          console.log("Bootstrap successfully loaded.");
+        })
+        .fail(function( jqxhr, settings, exception ) {
+          console.log("Bootstrap failed to load.");
+        });
+
     });
 
   }
