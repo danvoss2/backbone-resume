@@ -1,0 +1,83 @@
+<div class="col-xs-12" id="work-templ" style="display:none;">
+
+  <% _.each( data.jobs, function( job ){ %>
+    <div class="row work-title-row">
+      <div class="col-md-3 col-sm-4">
+          <h4><%= job.title %></h4>
+      </div>
+      <div class="col-md-6 col-sm-4 ca-col">
+        <h4><%= job.company %></h4>
+      </div>
+      <div class="col-md-3 col-sm-4 ra-col">
+        <h4><%= job.date %></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <ul>
+          <% _.each( job.tasks, function( task ){ %>
+            <li><%= task %></li>
+          <% }); %>
+        </ul>
+      </div>
+    </div>
+  <% }); %>
+
+<!--
+  <div class="row work-title-row">
+    <div class="col-md-3 col-sm-4">
+      <h4>Lead UI Developer</h4>
+    </div>
+    <div class="col-md-6 col-sm-4 ca-col">
+      <h4>AOL | Identity Engineering</h4>
+    </div>
+    <div class="col-md-3 col-sm-4 ra-col">
+      <h4>February 2011 - Present</h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <ul>
+        <li>Re-architected identity products’ client-side code base and build process using JavaScript, RequireJS modules, jQuery, SASS, Bootstrap, Grunt, and Bower.</li>
+        <li>Increased identity UI rendering performance by an average of 15% (according to WebPagetest).</li>
+        <li>Created identity systems dashboard UI using Backbone.js.</li>
+        <li>Implemented responsive UIs for registration, authentication, and account management products.</li>
+        <li>Mentored intern with regard to UI development by teaching them CSS and JavaScript best practices and giving them a project to complete.</li>
+        <li>Improved SDLC process by instituting Git Flow procedures for UI code base.</li>
+        <li>Created adaptive delivery solution for advertising on authentication pages.</li>
+        <li>Worked with marketing team to create an opt-in solution for texting promotions to new users. Utilized Java knowledge to implement HTTP interface to SMS application.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row work-title-row">
+    <div class="col-md-3 col-sm-4">
+      <h4>Senior Software Engineer</h4>
+    </div>
+    <div class="col-md-6 col-sm-4 ca-col">
+      <h4>AOL | Membership</h4>
+    </div>
+    <div class="col-md-3 col-sm-4 ra-col">
+      <h4>March 2008 - February 2011</h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <ul>
+        <li>Re-wrote registration UI using Velocity templates, JavaScript, jQuery, and CSS.</li>
+        <li>Designed and implemented a flexible, configurable solution for customizing registration flows across all of AOL’s products.</li>
+        <li>Streamlined registration flow provisioning process by writing a tool that allowed business partners to create new registration configurations.</li>
+        <li>Assisted migration of AOL’s registration application from WebLogic to Apache Tomcat.</li>
+        <li>Worked with marketing team to create a flexible, configuration-driven solution for toolbar promotions.</li>
+      </ul>
+    </div>
+  </div>
+-->
+
+  <div class="col-xs-12">
+    <a href="#" id="close-work">Close</a>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+{
+  "name": "Resume",
+  "version": "0.1.0",
+  "authors": [
+    "Dan Voss <dan.voss@gmail.com>"
+  ],
+  "description": "Resume App",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

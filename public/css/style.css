@@ -1,0 +1,77 @@
+html {
+}
+/*Boostrap Overrides*/
+.navbar {
+	margin-bottom: 0;
+}
+.navbar-toggle .icon-bar {
+  background-color: #333;
+}
+.main-cont {
+	color:#FFF;
+	background-color: #6f5499;
+	font-size: 16px;
+	padding: 10px 0;
+}
+.container-fluid {
+	padding: 0 7%;
+}
+.ca-col {
+	text-align: center;
+}
+.ra-col {
+	text-align: right;
+}
+.contact-cont .ca-col {
+	font-size: 28px;
+	padding: 5px 0 0;
+}
+.body-cont {
+	background-color: #337ab7;
+	border-bottom: 1px solid #99e3fb;
+	padding-bottom: 10px;
+}
+.body-cont a, .body-cont a:hover, .body-cont a:visited {
+	color: #FFF;
+}
+ul {
+	list-style: square outside none;
+}
+ul.tech-list li {
+	margin-left: -20px;
+}
+.title-link, .title-link:hover, .title-link:visited {
+	text-decoration: none;
+}
+.title-cont:before {
+  display: table;
+  content: " ";
+}
+.title-cont:after {
+  clear:both;
+}
+.title-cont h3 {
+	float:left;
+}
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	border-top: 9px solid transparent;
+	border-bottom: 9px solid transparent;
+	border-left: 16px solid #FFF;
+	float: left;
+	margin: 25px 0 0 10px;
+}
+#technologies-templ {
+	padding-left: 0;
+}
+
+
+@media (max-width: 768px) {
+  .work-title-row .ca-col {
+    text-align: left;
+  }
+  .work-title-row .ra-col {
+    text-align: left;
+  }
+}
