@@ -43,3 +43,6 @@ gulp.task('watch', function() {
   // Watch JS files, but don't watch the final minified main.min.js file.
   gulp.watch(['./public/js/**/*.js', '!./public/js/main.min.js'], ['scripts']);
 });
+
+// Default Task
+gulp.task('default', ['css', 'scripts', 'copy-scripts', 'watch']);
